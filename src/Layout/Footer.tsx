@@ -8,7 +8,7 @@ import Social from "Components/Footer/Social";
 
 const Footer = () => {
     return (
-        <Container maxWidth={false} disableGutters sx={{ bgcolor: "black" }}>
+        <Container maxWidth={false} disableGutters sx={{ bgcolor: "black", color: "white" }}>
             <Box component="img" src={Logo} alt="Logo" />
             <Typography variant="body1" component="p">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna

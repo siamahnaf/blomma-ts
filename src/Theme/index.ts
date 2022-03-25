@@ -3,7 +3,6 @@ import { createTheme } from '@mui/material/styles';
 declare module '@mui/material/styles' {
     interface PaletteColorOptions {
         main?: string;
-        main_primary?: string;
     }
     interface BreakpointOverrides {
         xs: true;
