@@ -1,10 +1,13 @@
 import type { NextPage } from "next";
 
+//Layout
+import Layout from "Layout";
+
 const Home: NextPage = () => {
   return (
-    <div>
+    <Layout active="home">
       Hello world
-    </div>
+    </Layout>
   );
 };
 export default Home;

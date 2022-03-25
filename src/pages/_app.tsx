@@ -6,6 +6,15 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { CacheProvider, EmotionCache } from '@emotion/react';
 import theme from 'Theme';
 import createEmotionCache from 'Emotion';
+//Next Progress
+import NextProgress from "next-progress";
+
+//Fonts & Font-weights
+import "@fontsource/poppins/300.css";
+import "@fontsource/poppins/400.css";
+import "@fontsource/poppins/500.css";
+import "@fontsource/poppins/600.css";
+import "@fontsource/poppins/700.css";
 
 const clientSideEmotionCache = createEmotionCache();
 
@@ -22,6 +31,12 @@ export default function MyApp(props: MyAppProps) {
       </Head>
       <ThemeProvider theme={theme}>
         <CssBaseline />
+        <NextProgress
+          delay={300}
+          options={{ showSpinner: false }}
+          color="#FED332"
+          height="1.5px"
+        />
         <Component {...pageProps} />
       </ThemeProvider>
     </CacheProvider>
