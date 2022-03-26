@@ -1,4 +1,4 @@
-import { Container, Grid } from "@mui/material";
+import { Container, Box, Grid } from "@mui/material";
 
 //Components
 import Logo from "Components/Header/Logo";
@@ -10,15 +10,27 @@ interface Props {
 
 const Header = ({ active }: Props) => {
     return (
-        <Container maxWidth={false} disableGutters>
-            <Grid container columnSpacing={2}>
-                <Grid item md={4}>
-                    <Logo />
+        <Container maxWidth={false} disableGutters sx={{ px: "2.5%", py: "32px" }} component="header">
+            <Box>
+                <Grid container columnSpacing={2}>
+                    <Grid item md={4}>
+                        <Logo />
+                    </Grid>
+                    <Grid item md={8}>
+                        <Nav active={active} />
+                    </Grid>
                 </Grid>
-                <Grid item md={8}>
-                    <Nav active={active} />
+            </Box>
+            <Box sx={{ display: "none" }}>
+                <Grid container columnSpacing={2}>
+                    <Grid item md={4}>
+                        <Logo />
+                    </Grid>
+                    <Grid item md={8}>
+                        <Nav active={active} />
+                    </Grid>
                 </Grid>
-            </Grid>
+            </Box>
         </Container>
     );
 };

@@ -6,7 +6,7 @@ import LogoImage from "Assets/logo.png";
 const Logo = () => {
     return (
         <Box>
-            <Box component="img" src={LogoImage} alt="Logo" />
+            <Box width="140px" component="img" src={LogoImage} alt="Logo" />
         </Box>
     );
 };

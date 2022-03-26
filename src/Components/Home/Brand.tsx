@@ -7,7 +7,7 @@ const Brand = () => {
             <Box>
                 <Grid container spacing={3}>
                     <Grid item md={6} />
-                    <Grid item md={5}>
+                    <Grid item md={6}>
                         <Box>
                             <Typography variant="h4" component="h4">
                                 Brands tell original stories
@@ -27,7 +27,6 @@ const Brand = () => {
                             </Stack>
                         </Box>
                     </Grid>
-                    <Grid item md={1} />
                 </Grid>
             </Box>
         </Container>

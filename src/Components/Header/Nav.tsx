@@ -8,6 +8,10 @@ import Drawers from "./Nav/Drawers";
 //Data
 import Navs from "Data/Header/Nav.data";
 
+//Styles
+import styles from "Styles/Header/Nav.styles";
+
+//Types
 interface Props {
     active: string
 }
@@ -22,10 +26,10 @@ const Nav = ({ active }: Props) => {
     };
     return (
         <Box>
-            <List component={Stack} direction="row">
+            <List component={Stack} direction="row" disablePadding dense sx={styles.List}>
                 {Navs && Navs.length > 0 &&
                     Navs.map((nav, i) => (
-                        <ListItem key={i}>
+                        <ListItem key={i} dense disableGutters disablePadding>
                             <Link href={nav.url}>
                                 <a className={active === nav.id ? "active" : ""}>
                                     {nav.name}
@@ -34,11 +38,14 @@ const Nav = ({ active }: Props) => {
                         </ListItem>
                     ))
                 }
-                <ListItem>
-                    <ButtonBase onClick={toggleDrawer(true)}>
-                        <Box className="rippleOne" />
-                        <Box className="rippleTwo" />
-                        <Box className="rippleThree" />
+                <ListItem dense disableGutters disablePadding>
+                    <ButtonBase onClick={toggleDrawer(true)} sx={styles.Bar}>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enableBackground="new 0 0 32 32" xmlSpace="preserve">
+                            <rect width="32" height="32"></rect>
+                            <line fill="none" stroke="#FFFFFF" strokeWidth="2" strokeMiterlimit="10" x1="8" y1="16" x2="24" y2="16"></line>
+                            <line fill="none" stroke="#FFFFFF" strokeWidth="2" strokeMiterlimit="10" x1="8" y1="21" x2="24" y2="21"></line>
+                            <line fill="none" stroke="#FFFFFF" strokeWidth="2" strokeMiterlimit="10" x1="8" y1="11" x2="24" y2="11"></line>
+                        </svg>
                     </ButtonBase>
                 </ListItem>
             </List>
@@ -49,6 +56,7 @@ const Nav = ({ active }: Props) => {
                 ModalProps={{
                     disableScrollLock: true
                 }}
+                sx={styles.Drawer}
             >
                 <Drawers toggleDrawer={toggleDrawer} />
             </Drawer>
