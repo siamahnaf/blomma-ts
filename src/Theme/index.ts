@@ -3,6 +3,7 @@ import { createTheme } from '@mui/material/styles';
 declare module '@mui/material/styles' {
     interface PaletteColorOptions {
         main?: string;
+        grey?: string;
     }
     interface BreakpointOverrides {
         xs: true;
@@ -31,6 +32,7 @@ const theme = createTheme({
         },
         primary: {
             main: "#FFD332", //Others Main Color
+            grey: "#a3a3a3", //Grey Text Color
         }
     },
     breakpoints: {

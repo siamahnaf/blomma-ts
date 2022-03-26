@@ -1,12 +1,41 @@
 export default {
     Embla: {
-        overflow: "hidden"
+        overflow: "hidden",
+        mx: "8em"
     },
     EmblaContainer: {
         display: "flex"
     },
     EmblaSlide: {
         position: "relative",
-        flex: "0 0 100%"
+        flex: "0 0 100%",
+        textAlign: "center"
+    },
+    Aposhtrophy: {
+        fontSize: "120px",
+        textAlign: "center",
+        fontWeight: 600,
+        top: "45px",
+        position: "relative"
+    },
+    AuthorBox: {
+        mt: "2em",
+        h6: {
+            fontSize: "25px",
+            fontWeight: 600
+        },
+        "& p": {
+            fontSize: "15px"
+        }
+    },
+    LeftButton: {
+        position: "absolute",
+        top: "55%",
+        left: "2%"
+    },
+    RightButton: {
+        position: "absolute",
+        top: "55%",
+        right: "2%"
     }
 }

@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import { Box } from "@mui/material";
 
 //Layout
 import Layout from "Layout";
@@ -15,13 +16,15 @@ import Company from "Components/Home/Company";
 const Home: NextPage = () => {
   return (
     <Layout active="home">
-      <Hero />
-      <Portfolio />
-      <About />
-      <Brand />
-      <Package />
-      <Client />
-      <Company />
+      <Box sx={{ bgcolor: "background.default", mb: "400px" }}>
+        <Hero />
+        <Portfolio />
+        <About />
+        <Brand />
+        <Package />
+        <Client />
+        <Company />
+      </Box>
     </Layout>
   );
 };
