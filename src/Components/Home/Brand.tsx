@@ -7,9 +7,15 @@ import styles from "Styles/Home/Brand.styles";
 //Background Image
 import Bg from "Assets/brand-bg.png";
 
+//Vector
+import BrandVector from "Utilis/Vector/BrandVector";
+
 const Brand = () => {
     return (
-        <Container maxWidth={false} disableGutters sx={{ py: "3em" }}>
+        <Container maxWidth={false} disableGutters sx={{ py: "3em", position: "relative" }}>
+            <Box sx={styles.Vector}>
+                <BrandVector />
+            </Box>
             <Box sx={{ position: "relative" }}>
                 <Box sx={styles.Image} component="img" src={Bg} alt="background" />
                 <Box sx={styles.Content}>

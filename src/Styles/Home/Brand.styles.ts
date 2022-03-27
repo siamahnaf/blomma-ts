@@ -40,5 +40,11 @@ export default {
                 color: "background.default"
             }
         }
+    },
+    Vector: {
+        position: "absolute",
+        zIndex: -1,
+        right: "-4%",
+        top: "-10%"
     }
 }

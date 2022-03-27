@@ -7,9 +7,20 @@ import Portfolios from "Data/Home/Portfolio.data";
 //Styles
 import styles from "Styles/Home/Portfolio.styles";
 
+//Vector
+import PortfolioOne from "Utilis/Vector/PortfolioOne";
+import PortfolioTwo from "Utilis/Vector/PortfolioTwo";
+import PortfolioThree from "Utilis/Vector/PortfolioThree";
+
 const Portfolio = () => {
     return (
-        <Container maxWidth={false} disableGutters sx={{ py: "3em" }}>
+        <Container maxWidth={false} disableGutters sx={{ py: "3em", position: "relative" }}>
+            <Box sx={styles.VectorTwo}>
+                <PortfolioTwo />
+            </Box>
+            <Box sx={styles.VectorOne}>
+                <PortfolioOne />
+            </Box>
             <Grid container spacing={0}>
                 {Portfolios && Portfolios.length > 0 &&
                     Portfolios.map((portfolio, i) => (
@@ -41,6 +52,9 @@ const Portfolio = () => {
                     ))
                 }
             </Grid>
+            <Box sx={styles.VectorThree}>
+                <PortfolioThree />
+            </Box>
         </Container>
     );
 };

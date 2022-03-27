@@ -16,8 +16,8 @@ import Company from "Components/Home/Company";
 const Home: NextPage = () => {
   return (
     <Layout active="home">
-      <Box sx={{ bgcolor: "background.default", mb: "400px" }}>
-        <Box sx={{ position: "relative", zIndex: 1 }}>
+      <Box sx={{ bgcolor: "background.default", mb: "400px", overflow: "hidden" }}>
+        <Box sx={{ position: "relative", zIndex: 2 }}>
           <Hero />
           <Portfolio />
           <About />

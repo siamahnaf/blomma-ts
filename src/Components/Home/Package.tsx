@@ -7,9 +7,15 @@ import styles from "Styles/Home/Package.styles";
 //Background Image
 import Bg from "Assets/package-bg.jpg";
 
+//Vector
+import PackageVector from "Utilis/Vector/PackageVector";
+
 const Package = () => {
     return (
-        <Container maxWidth={false} disableGutters sx={{ py: "3em" }}>
+        <Container maxWidth={false} disableGutters sx={{ py: "3em", position: "relative" }}>
+            <Box sx={styles.Vector}>
+                <PackageVector />
+            </Box>
             <Box sx={{ position: "relative" }}>
                 <Box sx={{ textAlign: "right" }}>
                     <Box width="62%" component="img" src={Bg} alt="Image" />

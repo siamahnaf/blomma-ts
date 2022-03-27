@@ -83,5 +83,23 @@ export default {
             transform: "translateY(-110%)",
             transition: "transform .3s 50ms,opacity .3s,-webkit-transform .3s 50ms"
         }
+    },
+    VectorTwo: {
+        position: "absolute",
+        right: "-60%",
+        top: "-35%",
+        zIndex: -1,
+    },
+    VectorOne: {
+        position: "absolute",
+        right: "-30%",
+        top: "-12%",
+        zIndex: -1,
+    },
+    VectorThree: {
+        position: "absolute",
+        zIndex: -1,
+        left: "-32%",
+        bottom: "-18%"
     }
 }
