@@ -12,6 +12,7 @@ import Brand from "Components/Home/Brand";
 import Package from "Components/Home/Package";
 import Client from "Components/Home/Client";
 import Company from "Components/Home/Company";
+import Floating from "Components/Home/Floating";
 
 const Home: NextPage = () => {
   return (
@@ -25,6 +26,7 @@ const Home: NextPage = () => {
           <Package />
           <Client />
           <Company />
+          <Floating />
         </Box>
       </Box>
     </Layout>

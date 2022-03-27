@@ -1,4 +1,4 @@
-import { MouseEvent, FC } from "react";
+import { MouseEvent } from "react";
 import { Box, Typography, List, ListItem, ButtonBase, Stack } from "@mui/material";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
