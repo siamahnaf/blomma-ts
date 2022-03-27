@@ -4,6 +4,9 @@ declare module '@mui/material/styles' {
     interface PaletteColorOptions {
         main?: string;
         grey?: string;
+        grey_second?: string;
+        background?: string;
+        creamy?: string;
     }
     interface BreakpointOverrides {
         xs: true;
@@ -33,6 +36,9 @@ const theme = createTheme({
         primary: {
             main: "#FFD332", //Others Main Color
             grey: "#a3a3a3", //Grey Text Color
+            grey_second: "#0000004d", //Grey color for team background
+            background: "#F9E6E2", //Secondary Background Color
+            creamy: "#EDBBB1", //Cream color
         }
     },
     breakpoints: {

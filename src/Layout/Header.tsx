@@ -23,7 +23,7 @@ const Header = ({ active }: Props) => {
     }, [])
     return (
         <Container maxWidth={false} disableGutters sx={{ px: "2.5%", bgcolor: "background.default" }} component="header">
-            <Box sx={{ py: "32px", bgcolor: "background.default" }}>
+            <Box sx={{ py: "32px", position: "relative", zIndex: 3 }}>
                 <Grid container columnSpacing={2}>
                     <Grid item md={4}>
                         <Logo />

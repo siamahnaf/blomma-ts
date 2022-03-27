@@ -7,10 +7,10 @@ import Layout from "Layout";
 //Components
 import Hero from "Components/Home/Hero";
 import Portfolio from "Components/Home/Portfolio";
-import About from "Components/Home/About";
+import About from "Components/Common/About";
 import Brand from "Components/Home/Brand";
 import Package from "Components/Home/Package";
-import Client from "Components/Home/Client";
+import Client from "Components/Common/Client";
 import Company from "Components/Home/Company";
 import Floating from "Components/Home/Floating";
 

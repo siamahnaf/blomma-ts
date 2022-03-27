@@ -7,7 +7,7 @@ import Autoplay from "embla-carousel-autoplay";
 import Clients from "Data/Home/Client.data";
 
 //Styles
-import styles from "Styles/Home/Client.styles";
+import styles from "Styles/Common/Client.styles";
 
 const Client = () => {
     const autoplay = useRef(

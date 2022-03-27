@@ -4,7 +4,7 @@ import { Container, Box, Grid, Typography } from "@mui/material";
 import Abouts from "Data/Home/About.data";
 
 //Styles
-import styles from "Styles/Home/About.styles";
+import styles from "Styles/Common/About.styles";
 
 const About = () => {
     return (
