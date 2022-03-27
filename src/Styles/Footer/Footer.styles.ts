@@ -6,7 +6,7 @@ export default {
         px: "30%",
         position: "fixed",
         bottom: 0,
-        zIndex: -1,
+        zIndex: -2,
         height: "400px",
         textAlign: "center",
     },

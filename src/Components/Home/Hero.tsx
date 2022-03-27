@@ -7,9 +7,15 @@ import LikeBox from "Assets/like.png";
 //Styles
 import styles from "Styles/Home/Hero.styles";
 
+//Vector Components
+import HeroVector from "Utilis/Vector/HeroVector";
+
 const Hero = () => {
     return (
         <Container maxWidth={false} disableGutters sx={styles.Container}>
+            <Box sx={styles.Vector}>
+                <HeroVector />
+            </Box>
             <Grid container spacing={2}>
                 <Grid item md={7}>
                     <Typography variant="h1" component="h1" sx={styles.Title}>

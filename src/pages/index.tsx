@@ -17,13 +17,15 @@ const Home: NextPage = () => {
   return (
     <Layout active="home">
       <Box sx={{ bgcolor: "background.default", mb: "400px" }}>
-        <Hero />
-        <Portfolio />
-        <About />
-        <Brand />
-        <Package />
-        <Client />
-        <Company />
+        <Box sx={{ position: "relative", zIndex: 1 }}>
+          <Hero />
+          <Portfolio />
+          <About />
+          <Brand />
+          <Package />
+          <Client />
+          <Company />
+        </Box>
       </Box>
     </Layout>
   );

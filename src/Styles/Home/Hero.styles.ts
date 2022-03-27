@@ -1,7 +1,8 @@
 export default {
     Container: {
         pt: "4.5em",
-        pb: "11em"
+        pb: "11em",
+        position: "relative"
     },
     Title: {
         fontSize: "115px",
@@ -32,5 +33,11 @@ export default {
     LikeBox: {
         width: "350px",
         mr: "30px"
+    },
+    Vector: {
+        position: "absolute",
+        left: "-26%",
+        zIndex: -1,
+        top: "10%"
     }
 }
