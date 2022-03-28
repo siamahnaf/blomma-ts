@@ -6,14 +6,12 @@ export default {
             marginLeft: "15px",
             a: {
                 textDecoration: "none",
-                color: "text.primary",
                 p: "3px 10px",
                 fontSize: "15px",
                 fontWeight: 600,
                 position: "relative",
                 "&:after": {
                     content: '""',
-                    bgcolor: "text.primary",
                     height: "2px",
                     position: "absolute",
                     left: "10px",

@@ -13,10 +13,11 @@ import styles from "Styles/Header/Nav.styles";
 
 //Types
 interface Props {
-    active: string
+    active: string;
+    light?: boolean;
 }
 
-const Nav = ({ active }: Props) => {
+const Nav = ({ active, light }: Props) => {
     const [open, setOpen] = useState<boolean>(false);
     const toggleDrawer = (current: boolean) => (event: KeyboardEvent | MouseEvent) => {
         if (event.type === 'keydown' && ((event as KeyboardEvent).key === 'Tab' || (event as KeyboardEvent).key === 'Shift')) {
@@ -29,7 +30,7 @@ const Nav = ({ active }: Props) => {
             <List component={Stack} direction="row" disablePadding dense sx={styles.List}>
                 {Navs && Navs.length > 0 &&
                     Navs.map((nav, i) => (
-                        <ListItem key={i} dense disableGutters disablePadding>
+                        <ListItem key={i} dense disableGutters disablePadding sx={{ a: { color: `${light ? "background.default" : "text.primary"}`, "&:after": { bgcolor: `${light ? "background.default" : "text.primary"}` } } }}>
                             <Link href={nav.url}>
                                 <a className={active === nav.id ? "active" : ""}>
                                     {nav.name}

@@ -7,6 +7,7 @@ declare module '@mui/material/styles' {
         grey_second?: string;
         background?: string;
         creamy?: string;
+        error?: string;
     }
     interface BreakpointOverrides {
         xs: true;
@@ -39,6 +40,7 @@ const theme = createTheme({
             grey_second: "#0000004d", //Grey color for team background
             background: "#F9E6E2", //Secondary Background Color
             creamy: "#EDBBB1", //Cream color
+            error: "#FF0000", //Red color
         }
     },
     breakpoints: {

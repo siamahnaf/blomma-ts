@@ -4,6 +4,9 @@ import { Box } from "@mui/material";
 //Layout
 import Layout from "Layout";
 
+//Seo
+import Seo from "Utilis/Seo";
+
 //Components
 import Hero from "Components/Home/Hero";
 import Portfolio from "Components/Home/Portfolio";
@@ -17,6 +20,7 @@ import Floating from "Components/Home/Floating";
 const Home: NextPage = () => {
   return (
     <Layout active="home">
+      <Seo />
       <Box sx={{ bgcolor: "background.default", mb: "400px", overflow: "hidden" }}>
         <Box sx={{ position: "relative", zIndex: 2 }}>
           <Hero />

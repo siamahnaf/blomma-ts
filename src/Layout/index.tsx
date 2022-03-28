@@ -6,13 +6,14 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 interface Props {
-    active: string
+    active: string;
+    light?: boolean;
 }
 
-const Layout: FC<Props> = ({ children, active }) => {
+const Layout: FC<Props> = ({ children, active, light }) => {
     return (
         <Box>
-            <Header active={active} />
+            <Header active={active} light={light} />
             {children}
             <Footer />
         </Box>

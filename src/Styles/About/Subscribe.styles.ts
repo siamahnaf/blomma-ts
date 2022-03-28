@@ -33,4 +33,17 @@ export default {
             color: "text.primary"
         }
     },
+    ErrorMessage: {
+        width: "max-content",
+        mx: "auto",
+        mt: "15px",
+        "& p": {
+            fontSize: "15px",
+            color: "primary.error",
+            svg: {
+                mr: "4px",
+                mb: "-2px"
+            }
+        }
+    }
 }

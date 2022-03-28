@@ -4,6 +4,9 @@ import { Box } from "@mui/material";
 //Layout
 import Layout from "Layout";
 
+//Seo
+import Seo from "Utilis/Seo";
+
 //Components
 import PageTitlte from "Components/About/PageTitlte";
 import About from "Components/Common/About";
@@ -16,6 +19,7 @@ import Subscribe from "Components/About/Subscribe";
 const AboutUs: NextPage = () => {
     return (
         <Layout active="about">
+            <Seo title="About Us - Blomma" />
             <Box sx={{ bgcolor: "primary.background", mb: "400px" }}>
                 <Box sx={{ position: "relative", zIndex: 2 }}>
                     <PageTitlte />

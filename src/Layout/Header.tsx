@@ -9,10 +9,11 @@ import Nav from "Components/Header/Nav";
 import styles from "Styles/Header/Header.styles";
 
 interface Props {
-    active: string
+    active: string;
+    light?: boolean;
 }
 
-const Header = ({ active }: Props) => {
+const Header = ({ active, light }: Props) => {
     const [sticky, setSticky] = useState(false);
     useEffect(() => {
         const handleScroll = () => {
@@ -26,10 +27,10 @@ const Header = ({ active }: Props) => {
             <Box sx={{ py: "32px", position: "relative", zIndex: 3 }}>
                 <Grid container columnSpacing={2}>
                     <Grid item md={4}>
-                        <Logo />
+                        <Logo light={light} />
                     </Grid>
                     <Grid item md={8}>
-                        <Nav active={active} />
+                        <Nav active={active} light={light} />
                     </Grid>
                 </Grid>
             </Box>

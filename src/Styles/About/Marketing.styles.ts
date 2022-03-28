@@ -21,7 +21,7 @@ export default {
     Line: {
         flex: "0 0 11%",
         height: "1px",
-        background: "black",
+        bgcolor: "text.primary",
         mr: "25px",
         mt: "15px"
     },
@@ -41,5 +41,5 @@ export default {
                 color: "background.default"
             }
         }
-    },
+    }
 }
