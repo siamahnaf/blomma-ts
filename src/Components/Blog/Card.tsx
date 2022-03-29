@@ -13,7 +13,7 @@ const Card = () => {
             {News && News.length > 0 &&
                 News.map((news, i) => (
                     <Box key={i}>
-                        <Link href={`/blog/${news.title.replaceAll(' ', '-').toLowerCase()}`}>
+                        <Link href={`/blog/${news.title.replace(' ', '-').toLowerCase()}`}>
                             <a>
                                 <Box width="100%" component="img" src={news.image} alt={news.title} />
                             </a>
@@ -32,7 +32,7 @@ const Card = () => {
                                 </Box>
                             </Box>
                             <Box sx={styles.Title}>
-                                <Link href={`/blog/${news.title.replaceAll(' ', '-').toLowerCase()}`}>
+                                <Link href={`/blog/${news.title.replace(' ', '-').toLowerCase()}`}>
                                     <a>
                                         <Typography variant="h4" component="h4">
                                             {news.title}
@@ -44,7 +44,7 @@ const Card = () => {
                                 {news.description}
                             </Typography>
                             <Box sx={styles.Button}>
-                                <Link href={`/blog/${news.title.replaceAll(' ', '-').toLowerCase()}`}>
+                                <Link href={`/blog/${news.title.replace(' ', '-').toLowerCase()}`}>
                                     <a>
                                         <Typography variant="body1" component="span">
                                             Read more
