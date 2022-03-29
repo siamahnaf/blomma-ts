@@ -1,15 +1,26 @@
 import type { NextPage } from "next";
-import { Container } from "@mui/material";
+import { Box } from "@mui/material";
 
 //Layout
 import Layout from "Layout";
 
+//Seo
+import Seo from "Utilis/Seo";
+
+//Components
+import PageTitle from "Components/Blog/PageTitle";
+import Card from "Components/Blog/Card";
+
 const blog: NextPage = () => {
     return (
         <Layout active="blog">
-            <Container maxWidth={false} disableGutters>
-                Blog
-            </Container>
+            <Seo title="Blog - Blomma" />
+            <Box sx={{ bgcolor: "background.default", mb: "400px" }}>
+                <Box sx={{ position: "relative", zIndex: 2 }}>
+                    <PageTitle />
+                    <Card />
+                </Box>
+            </Box>
         </Layout>
     );
 };
