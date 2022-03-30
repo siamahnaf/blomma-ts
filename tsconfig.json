@@ -21,7 +21,9 @@
     "baseUrl": "src"
   },
   "include": [
+    "src",
     "next-env.d.ts",
+    "index.d.ts",
     "**/*.ts",
     "**/*.tsx"
   ],

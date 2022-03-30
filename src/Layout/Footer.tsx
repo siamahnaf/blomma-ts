@@ -1,4 +1,5 @@
 import { Container, Box, Typography } from "@mui/material";
+import Link from "next/link";
 
 //Logo
 import Logo from "Assets/logo-white.png";
@@ -16,6 +17,17 @@ const Footer = () => {
             <Typography variant="body1" component="p" sx={styles.Text}>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
             </Typography>
+            <Box sx={styles.Nav}>
+                <Link href="/terms-&-condition">
+                    <a>Terms & Condition</a>
+                </Link>
+                <Link href="/privacy-policy">
+                    <a>Privacy Policy</a>
+                </Link>
+                <Link href="/careers">
+                    <a>Careers</a>
+                </Link>
+            </Box>
             <Social />
             <Typography variant="body1" component="p" sx={styles.Copytright}>
                 © {new Date().getFullYear()} Codeforest Interactive, All Rights Reserved

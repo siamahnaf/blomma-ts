@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
-const withImages = require('next-images')
+const optimizedImages = require('next-optimized-images');
 
-
-const nextConfig = withImages({
+const nextConfig = optimizedImages({
   images: {
-    disableStaticImages: true,
+    disableStaticImages: true
   }
 });
 
-module.exports = nextConfig
+module.exports = nextConfig;
+

@@ -18,7 +18,7 @@ import Form from "Components/Common/Form";
 
 const Careers: NextPage = () => {
     return (
-        <Layout active="careers" light={true}>
+        <Layout active="about" light={true}>
             <Seo title="Carers - Blomma" />
             <Box sx={{ bgcolor: "background.default", mb: "400px" }} >
                 <Box sx={{ position: "relative", zIndex: 2 }}>

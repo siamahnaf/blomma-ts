@@ -7,7 +7,7 @@ export default {
         position: "fixed",
         bottom: 0,
         zIndex: -2,
-        height: "400px",
+        height: "420px",
         textAlign: "center",
     },
     Text: {
@@ -18,5 +18,18 @@ export default {
     Copytright: {
         color: "primary.grey",
         fontSize: "15px"
+    },
+    Nav: {
+        mb: "25px",
+        a: {
+            mx: "10px",
+            color: "primary.grey",
+            textDecoration: "none",
+            fontSize: "15px",
+            transition: ".1s cubic-bezier(.25,.46,.45,.94)",
+            "&:hover": {
+                color: "background.default"
+            }
+        }
     }
 }
