@@ -1,5 +1,7 @@
+import { useState } from "react";
 import { Container, Stack, Box, Grid, Typography } from "@mui/material";
 import Link from "next/link";
+import VisibilitySensor from "react-visibility-sensor";
 
 //Styles
 import styles from "Styles/Home/Package.styles";
@@ -11,10 +13,20 @@ import Bg from "Assets/package-bg.jpg";
 import PackageVector from "Utilis/Vector/PackageVector";
 
 const Package = () => {
+    const [vectorOne, setVectorOne] = useState(false);
+    const onChangeOne = (isVisible: boolean) => {
+        if (isVisible) {
+            setVectorOne(true)
+        }
+    }
     return (
         <Container maxWidth={false} disableGutters sx={{ py: "3em", position: "relative" }}>
             <Box sx={styles.Vector}>
-                <PackageVector />
+                <VisibilitySensor partialVisibility onChange={onChangeOne}>
+                    <Box sx={styles.VectorInner} className={vectorOne ? "visible" : ""}>
+                        <PackageVector />
+                    </Box>
+                </VisibilitySensor>
             </Box>
             <Box sx={{ position: "relative" }}>
                 <Box sx={{ textAlign: "right" }}>

@@ -46,5 +46,15 @@ export default {
         zIndex: -1,
         right: "-4%",
         top: "-10%"
+    },
+    VectorInner: {
+        opacity: 0,
+        transform: "scale(.3)",
+        transition: "transform .75s cubic-bezier(.175,.885,.32,1.275),opacity .4s cubic-bezier(.25,.46,.45,.94),-webkit-transform .75s cubic-bezier(.175,.885,.32,1.275)",
+        "&.visible": {
+            opacity: 1,
+            transform: "scale(1)",
+
+        }
     }
 }

@@ -1,5 +1,7 @@
+import { useState } from "react";
 import { Container, Grid, Box, Typography } from "@mui/material";
 import Link from "next/link";
+import VisibilitySensor from "react-visibility-sensor";
 
 //Data
 import Portfolios from "Data/Home/Portfolio.data";
@@ -13,13 +15,29 @@ import PortfolioTwo from "Utilis/Vector/PortfolioTwo";
 import PortfolioThree from "Utilis/Vector/PortfolioThree";
 
 const Portfolio = () => {
+    const [vectorOne, setVectorOne] = useState(false);
+    const [vectorThree, setVectorThree] = useState(false);
+    const onChangeOne = (isVisible: boolean) => {
+        if (isVisible) {
+            setVectorOne(true)
+        }
+    }
+    const onChangeThree = (isVisible: boolean) => {
+        if (isVisible) {
+            setVectorThree(true)
+        }
+    }
     return (
         <Container maxWidth={false} disableGutters sx={{ py: "3em", position: "relative" }}>
             <Box sx={styles.VectorTwo}>
                 <PortfolioTwo />
             </Box>
             <Box sx={styles.VectorOne}>
-                <PortfolioOne />
+                <VisibilitySensor partialVisibility onChange={onChangeOne}>
+                    <Box sx={styles.VectorInner} className={vectorOne ? "visible" : ""}>
+                        <PortfolioOne />
+                    </Box>
+                </VisibilitySensor>
             </Box>
             <Grid container spacing={0}>
                 {Portfolios && Portfolios.length > 0 &&
@@ -53,7 +71,11 @@ const Portfolio = () => {
                 }
             </Grid>
             <Box sx={styles.VectorThree}>
-                <PortfolioThree />
+                <VisibilitySensor partialVisibility offset={{ top: 150 }} onChange={onChangeThree}>
+                    <Box sx={styles.VectorInner} className={vectorThree ? "visible" : ""}>
+                        <PortfolioThree />
+                    </Box>
+                </VisibilitySensor>
             </Box>
         </Container>
     );

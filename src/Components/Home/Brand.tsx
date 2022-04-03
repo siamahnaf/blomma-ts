@@ -1,5 +1,7 @@
+import { useState } from "react";
 import { Container, Stack, Box, Grid, Typography } from "@mui/material";
 import Link from "next/link";
+import VisibilitySensor from "react-visibility-sensor";
 
 //Styles
 import styles from "Styles/Home/Brand.styles";
@@ -11,10 +13,20 @@ import Bg from "Assets/brand-bg.png";
 import BrandVector from "Utilis/Vector/BrandVector";
 
 const Brand = () => {
+    const [vectorOne, setVectorOne] = useState(false);
+    const onChangeOne = (isVisible: boolean) => {
+        if (isVisible) {
+            setVectorOne(true)
+        }
+    }
     return (
         <Container maxWidth={false} disableGutters sx={{ py: "3em", position: "relative" }}>
             <Box sx={styles.Vector}>
-                <BrandVector />
+                <VisibilitySensor partialVisibility onChange={onChangeOne}>
+                    <Box sx={styles.VectorInner} className={vectorOne ? "visible" : ""}>
+                        <BrandVector />
+                    </Box>
+                </VisibilitySensor>
             </Box>
             <Box sx={{ position: "relative" }}>
                 <Box sx={styles.Image} component="img" src={Bg} alt="background" />
