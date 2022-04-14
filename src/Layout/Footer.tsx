@@ -30,7 +30,7 @@ const Footer = () => {
             </Box>
             <Social />
             <Typography variant="body1" component="p" sx={styles.Copytright}>
-                © {new Date().getFullYear()} Codeforest Interactive, All Rights Reserved
+                © {new Date().getFullYear()} Blooma Interactive, All Rights Reserved
             </Typography>
         </Container>
     );
