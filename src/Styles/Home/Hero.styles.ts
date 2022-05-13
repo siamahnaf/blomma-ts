@@ -36,8 +36,18 @@ export default {
         }
     },
     LikeBox: {
-        width: "350px",
-        mr: "30px"
+        width: {
+            xxxl: "550px",
+            xxl: "450px",
+            xl: "420px",
+            lg: "350px"
+        },
+        mr: {
+            xxxl: "60px",
+            xxl: "50px",
+            xl: "40px",
+            lg: "30px"
+        }
     },
     Vector: {
         position: "absolute",
