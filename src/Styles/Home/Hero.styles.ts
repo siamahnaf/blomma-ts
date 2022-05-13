@@ -1,9 +1,9 @@
 export default {
     Container: {
         pt: {
-            xxxl: "18em",
-            xxl: "12em",
-            xl: "7em",
+            xxxl: "25em",
+            xxl: "16em",
+            xl: "9em",
             lg: "4.5em"
         },
         pb: "11em",
