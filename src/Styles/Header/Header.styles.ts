@@ -2,7 +2,9 @@ export default {
     StickyHeader: {
         py: {
             xxxl: "40px",
-            lg: "32px"
+            xxl: "37px",
+            xl: "35px",
+            md: "32px"
         },
         height: "102px",
         px: "2.5%",

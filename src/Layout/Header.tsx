@@ -27,7 +27,9 @@ const Header = ({ active, light }: Props) => {
             <Box sx={{
                 py: {
                     xxxl: "40px",
-                    lg: "32px"
+                    xxl: "37px",
+                    xl: "35px",
+                    md: "32px"
                 }, position: "relative", zIndex: 3
             }}>
                 <Grid container columnSpacing={2}>

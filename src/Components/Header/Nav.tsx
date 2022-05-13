@@ -30,7 +30,7 @@ const Nav = ({ active, light }: Props) => {
             <List component={Stack} direction="row" disablePadding dense sx={styles.List}>
                 {Navs && Navs.length > 0 &&
                     Navs.map((nav, i) => (
-                        <ListItem key={i} dense disableGutters disablePadding sx={{ a: { color: `${light ? "background.default" : "text.primary"}`, "&:after": { bgcolor: `${light ? "background.default" : "text.primary"}` } } }}>
+                        <ListItem key={i} dense disableGutters disablePadding sx={{ a: { color: `${light ? "background.default" : "text.primary"}`, display: { lg: "block", xxs: "none" }, "&:after": { bgcolor: `${light ? "background.default" : "text.primary"}` } } }}>
                             <Link href={nav.url}>
                                 <a className={active === nav.id ? "active" : ""}>
                                     {nav.name}

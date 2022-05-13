@@ -5,6 +5,9 @@ import Link from "next/link";
 import LogoImage from "Assets/logo.png";
 import LogoWhite from "Assets/logo-white.png";
 
+//Styles
+import styles from "Styles/Header/Logo.styles";
+
 //Types
 interface Props {
     light?: boolean;
@@ -16,9 +19,9 @@ const Logo = ({ light }: Props) => {
             <Link href="/">
                 <a>
                     {light ? (
-                        <Box width="140px" component="img" src={LogoWhite} alt="Logo" />
+                        <Box sx={styles.Logo} component="img" src={LogoWhite} alt="Logo" />
                     ) : (
-                        <Box width="140px" component="img" src={LogoImage} alt="Logo" />
+                        <Box sx={styles.Logo} component="img" src={LogoImage} alt="Logo" />
                     )}
                 </a>
             </Link>
