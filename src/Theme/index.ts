@@ -23,6 +23,7 @@ declare module '@mui/material/styles' {
         lg: true;
         xl: true;
         xxl: true;
+        xxxl: true
     }
 }
 
@@ -60,7 +61,8 @@ const theme = createTheme({
             md: 992, // Medium Devices ---- Default BreakPoints
             lg: 1200, // Large Devices  ---- Default BreakPoints
             xl: 1536, // Extra Large Devices ---- Default BreakPoints
-            xxl: 1980 // Double Extra Large Devices
+            xxl: 1920, // Double Extra Large Devices
+            xxxl: 2560 // Tripple Extra Devices
         },
     },
     components: {

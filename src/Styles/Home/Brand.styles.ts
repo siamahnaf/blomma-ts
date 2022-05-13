@@ -1,6 +1,10 @@
 export default {
     Image: {
-        ml: "-45px"
+        ml: {
+            xxl: "0px",
+            xl: "-25px",
+            lg: "-45px"
+        }
     },
     Content: {
         position: "absolute",
@@ -10,7 +14,12 @@ export default {
     },
     Container: {
         bgcolor: "background.default",
-        p: "60px 70px"
+        p: {
+            xxxl: "200px 120px",
+            xxl: "120px 80px",
+            xl: "100px 75px",
+            lg: "60px 70px"
+        }
     },
     Heading: {
         fontSize: "40px",
@@ -44,7 +53,12 @@ export default {
     Vector: {
         position: "absolute",
         zIndex: -1,
-        right: "-4%",
+        right: {
+            xxxl: "-4%",
+            xxl: "-10%",
+            xl: "-12%",
+            lg: "-4%"
+        },
         top: "-10%"
     },
     VectorInner: {

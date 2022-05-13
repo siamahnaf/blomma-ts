@@ -86,14 +86,34 @@ export default {
     },
     VectorTwo: {
         position: "absolute",
-        right: "-60%",
-        top: "-35%",
+        right: {
+            xxxl: "-15%",
+            xxl: "-30%",
+            xl: "-50%",
+            lg: "-60%"
+        },
+        top: {
+            xxxl: "-8%",
+            xxl: "-16%",
+            xl: "-25%",
+            lg: "-35%"
+        },
         zIndex: -1,
     },
     VectorOne: {
         position: "absolute",
-        right: "-30%",
-        top: "-12%",
+        right: {
+            xxxl: "-23%",
+            xxl: "-15%",
+            xl: "-25%",
+            lg: "-30%"
+        },
+        top: {
+            xxxl: "-12%",
+            xxl: "-5%",
+            xl: "-7%",
+            lg: "-12%"
+        },
         zIndex: -1,
     },
     VectorThree: {

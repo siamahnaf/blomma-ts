@@ -1,6 +1,11 @@
 export default {
     Container: {
-        pt: "4.5em",
+        pt: {
+            xxxl: "18em",
+            xxl: "12em",
+            xl: "7em",
+            lg: "4.5em"
+        },
         pb: "11em",
         position: "relative"
     },
@@ -36,7 +41,12 @@ export default {
     },
     Vector: {
         position: "absolute",
-        left: "-26%",
+        left: {
+            xxxl: "-15%",
+            xxl: "-20%",
+            xl: "-24%",
+            lg: "-26%"
+        },
         zIndex: -1,
         top: "10%"
     }

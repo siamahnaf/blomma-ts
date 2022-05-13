@@ -1,6 +1,9 @@
 export default {
     StickyHeader: {
-        py: "32px",
+        py: {
+            xxxl: "40px",
+            lg: "32px"
+        },
         height: "102px",
         px: "2.5%",
         position: "fixed",

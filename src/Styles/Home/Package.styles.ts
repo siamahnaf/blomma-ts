@@ -7,7 +7,12 @@ export default {
     },
     Container: {
         bgcolor: "background.default",
-        p: "85px 70px"
+        p: {
+            xxxl: "280px 120px",
+            xxl: "200px 100px",
+            xl: "120px 80px",
+            lg: "85px 70px"
+        }
     },
     Heading: {
         fontSize: "40px",
