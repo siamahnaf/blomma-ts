@@ -26,7 +26,7 @@ const Form = () => {
     return (
         <Box component="form" onSubmit={handleSubmit(onSubmit)}>
             <Grid container columnSpacing={2} rowSpacing={3}>
-                <Grid item md={6}>
+                <Grid item {...{ lsm: 6, xxs: 12 }}>
                     <Box>
                         <InputBase
                             placeholder="Name"
@@ -46,7 +46,7 @@ const Form = () => {
                         )}
                     </Box>
                 </Grid>
-                <Grid item md={6}>
+                <Grid item {...{ lsm: 6, xxs: 12 }}>
                     <Box>
                         <InputBase
                             placeholder="Email"
@@ -69,7 +69,7 @@ const Form = () => {
                         )}
                     </Box>
                 </Grid>
-                <Grid item md={12}>
+                <Grid item {...{ xxs: 12 }}>
                     <Box>
                         <InputBase
                             placeholder="Message"

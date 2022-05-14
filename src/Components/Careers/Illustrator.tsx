@@ -12,9 +12,9 @@ import styles from "Styles/Careers/Careers.styles";
 
 const Illustrator = () => {
     return (
-        <Container maxWidth={false} disableGutters sx={{ bgcolor: "primary.creamy", py: "6.5em" }}>
-            <Grid container spacing={2}>
-                <Grid item md={6}>
+        <Container maxWidth={false} disableGutters sx={{ bgcolor: "primary.creamy", ...styles.Container }}>
+            <Grid container rowSpacing={{ md: 2, xxs: 8 }} columnSpacing={{ md: 2, xxs: 0 }}>
+                <Grid item {...{ md: 6, xxs: 12 }}>
                     <Box>
                         <Typography variant="h5" component="h5" sx={styles.Title}>
                             Illustrator
@@ -29,10 +29,10 @@ const Illustrator = () => {
                         </Box>
                     </Box>
                 </Grid>
-                <Grid item md={3}>
+                <Grid item {...{ md: 3, sm: 6, xxs: 12 }}>
                     <Lists list={Requirements} title="Requirements" />
                 </Grid>
-                <Grid item md={3}>
+                <Grid item {...{ md: 3, sm: 6, xxs: 12 }}>
                     <Lists list={Offers} title="Offers" />
                 </Grid>
             </Grid>

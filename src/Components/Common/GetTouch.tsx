@@ -15,7 +15,7 @@ const Icons = [
 
 const GetTouch = () => {
     return (
-        <Box sx={{ mt: "1.2em" }}>
+        <Box sx={{ mt: { md: "1.2em", xxs: "0" } }}>
             <Typography variant="h4" component="h4" sx={styles.Title}>
                 Get in touch!
             </Typography>

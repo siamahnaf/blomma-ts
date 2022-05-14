@@ -12,9 +12,9 @@ import styles from "Styles/Careers/Careers.styles";
 
 const Animator = () => {
     return (
-        <Container maxWidth={false} disableGutters sx={{ py: "6.5em" }}>
-            <Grid container spacing={2}>
-                <Grid item md={6}>
+        <Container maxWidth={false} disableGutters sx={styles.Container}>
+            <Grid container rowSpacing={{ md: 2, xxs: 8 }} columnSpacing={{ md: 2, xxs: 0 }}>
+                <Grid item {...{ md: 6, xxs: 12 }}>
                     <Box>
                         <Typography variant="h5" component="h5" sx={styles.Title}>
                             Animator
@@ -29,10 +29,10 @@ const Animator = () => {
                         </Box>
                     </Box>
                 </Grid>
-                <Grid item md={3}>
+                <Grid item {...{ md: 3, sm: 6, xxs: 12 }}>
                     <Lists list={Requirements} title="Requirements" />
                 </Grid>
-                <Grid item md={3}>
+                <Grid item {...{ md: 3, sm: 6, xxs: 12 }}>
                     <Lists list={Offers} title="Offers" />
                 </Grid>
             </Grid>

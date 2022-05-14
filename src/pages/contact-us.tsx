@@ -15,13 +15,24 @@ const Contact: NextPage = () => {
             <Box sx={{ bgcolor: "primary.grenish", mb: "400px" }}>
                 <Box sx={{ position: "relative", zIndex: 2 }}>
                     <PageTitle />
-                    <Container maxWidth={false} disableGutters sx={{ py: "6.5em" }}>
+                    <Container maxWidth={false} disableGutters sx={{
+                        py: {
+                            xxxl: "10em",
+                            xxl: "9em",
+                            xl: "8em",
+                            md: "6.5em",
+                            smd: "4em",
+                            sm: "3em",
+                            xs: "2.5em",
+                            xxs: "2em"
+                        }
+                    }}>
                         <Grid container spacing={5}>
-                            <Grid item md={6}>
+                            <Grid item {...{ md: 6, xxs: 12 }}>
                                 <GetTouch />
                             </Grid>
-                            <Grid item md={6}>
-                                <Box sx={{ bgcolor: "background.default", p: "50px" }}>
+                            <Grid item {...{ md: 6, xxs: 12 }}>
+                                <Box sx={{ bgcolor: "background.default", p: { sm: "50px", xs: "20px", xxs: "15px" } }}>
                                     <Form />
                                 </Box>
                             </Grid>

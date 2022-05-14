@@ -1,4 +1,16 @@
 export default {
+    Container: {
+        py: {
+            xxxl: "10em",
+            xxl: "9em",
+            xl: "8em",
+            md: "6.5em",
+            smd: "4em",
+            sm: "3em",
+            xs: "2.5em",
+            xxs: "2em"
+        }
+    },
     Title: {
         fontSize: "25px",
         fontWeight: 600
