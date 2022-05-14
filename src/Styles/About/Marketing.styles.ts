@@ -6,7 +6,21 @@ export default {
     Content: {
         bgcolor: "primary.creamy",
         height: "100%",
-        px: "6em",
+        px: {
+            lg: "6em",
+            md: "2em",
+            lsm: "3em",
+            msm: "2em",
+            sm: "1.5em",
+            xxs: "1em"
+        },
+        py: {
+            md: 0,
+            lsm: "5em",
+            msm: "4em",
+            sm: "3em",
+            xxs: "2em"
+        }
     },
     Wrapper: {
         position: "relative",
@@ -14,7 +28,13 @@ export default {
         transform: "translateY(-50%)"
     },
     Heading: {
-        fontSize: "40px",
+        fontSize: {
+            lg: "40px",
+            msm: "35px",
+            sm: "30px",
+            xs: "28px",
+            xxs: "25px"
+        },
         fontWeight: 600,
         mb: "20px"
     },

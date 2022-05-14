@@ -5,7 +5,11 @@ export default {
         textAlign: "center"
     },
     Title: {
-        fontSize: "60px",
+        fontSize: {
+            sm: "60px",
+            xs: "50px",
+            xxs: "40px"
+        },
         fontWeight: 600
     },
     Description: {

@@ -14,7 +14,7 @@ const Team = () => {
             <Grid container spacing={0}>
                 {Teams && Teams.length > 0 &&
                     Teams.map((team, i) => (
-                        <Grid item md={3} key={i}>
+                        <Grid item {...{ md: 3, lsm: 6, xxs: 12 }} key={i}>
                             <Box sx={styles.Main}>
                                 <Box sx={styles.Image} component="img" src={team.profile} alt={team.name} />
                                 <Box sx={styles.Container} className="container-hover">

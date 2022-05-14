@@ -11,10 +11,10 @@ const Marketing = () => {
     return (
         <Box sx={{ mt: "4em" }}>
             <Grid container spacing={0}>
-                <Grid item md={6}>
+                <Grid item {...{ md: 6, xxs: 12 }}>
                     <Box sx={styles.Image} component="img" src={MarketingImage} alt="Marketing" />
                 </Grid>
-                <Grid item md={6}>
+                <Grid item {...{ md: 6, xxs: 12 }}>
                     <Box sx={styles.Content}>
                         <Box sx={styles.Wrapper}>
                             <Typography variant="h3" component="h3" sx={styles.Heading}>

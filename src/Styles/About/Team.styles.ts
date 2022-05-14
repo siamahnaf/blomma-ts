@@ -79,7 +79,11 @@ export default {
         opacity: 0
     },
     Name: {
-        fontSize: "25px",
+        fontSize: {
+            lg: "25px",
+            md: "20px",
+            sm: "25px"
+        },
         fontWeight: 600
     },
     Job: {

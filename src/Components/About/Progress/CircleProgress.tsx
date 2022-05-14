@@ -7,8 +7,8 @@ const CircleProgress = () => {
     return (
         <Box sx={styles.Container}>
             <Box sx={styles.Wraper}>
-                <Grid container columnSpacing={4}>
-                    <Grid item md={6}>
+                <Grid container columnSpacing={{ lg: 4, md: 1, msm: 4, xxs: 0 }} rowSpacing={{ msm: 0, xxs: 8 }}>
+                    <Grid item {...{ msm: 6, xxs: 12 }}>
                         <Box>
                             <Box sx={{ position: "relative" }}>
                                 <CircularProgress
@@ -30,7 +30,7 @@ const CircleProgress = () => {
                             </Typography>
                         </Box>
                     </Grid>
-                    <Grid item md={6}>
+                    <Grid item {...{ msm: 6, xxs: 12 }}>
                         <Box>
                             <Box sx={{ position: "relative" }}>
                                 <CircularProgress

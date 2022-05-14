@@ -13,10 +13,10 @@ const Progress = () => {
     return (
         <Box sx={{ py: "6em" }}>
             <Grid container spacing={0}>
-                <Grid item md={6}>
+                <Grid item {...{ md: 6, xxs: 12 }}>
                     <CircleProgress />
                 </Grid>
-                <Grid item md={6}>
+                <Grid item {...{ md: 6, xxs: 12 }}>
                     <Box sx={styles.Images} component="img" src={ProgressImage} alt="Progress" />
                 </Grid>
             </Grid>

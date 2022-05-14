@@ -2,7 +2,25 @@ export default {
     Container: {
         bgcolor: "primary.creamy",
         height: "100%",
-        px: "3.5em"
+        px: {
+            lg: "3.5em",
+            md: "1em",
+            smd: "2em",
+            lsm: "1.5em",
+            xxs: "1em"
+        },
+        py: {
+            lg: "0",
+            md: "1em",
+            smd: "3em",
+            msm: "2em",
+            sm: "3em",
+            xxs: "2em"
+        },
+        mt: {
+            sm: 0,
+            xxs: "4em"
+        }
     },
     Wraper: {
         position: "relative",

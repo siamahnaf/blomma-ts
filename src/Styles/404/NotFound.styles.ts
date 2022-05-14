@@ -22,13 +22,25 @@ export default {
         height: "100%",
         width: "100%",
         verticalAlign: "middle",
-        px: "20%",
+        px: {
+            smd: "20%",
+            xxs: "2%"
+        },
         textAlign: "center"
     },
     Title: {
-        fontSize: "60px",
+        fontSize: {
+            smd: "60px",
+            lsm: "45px",
+            msm: "40px",
+            xs: "35px",
+            xxs: "30px"
+        },
         my: "8px",
-        lineHeight: "72px",
+        lineHeight: {
+            sm: "72px",
+            xxs: "40px"
+        },
         fontWeight: 600
     },
     Description: {
