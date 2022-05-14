@@ -65,12 +65,8 @@ export default {
             lg: "350px",
             md: "310px"
         },
-        mr: {
-            xxxl: "60px",
-            xxl: "50px",
-            xl: "40px",
-            lg: "30px"
-        },
+        m: "0 auto",
+        mr: "50px",
         display: {
             md: "block",
             xxs: "none"
