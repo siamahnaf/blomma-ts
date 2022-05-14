@@ -1,9 +1,13 @@
 export default {
     Container: {
         position: "fixed",
-        left: "30px",
+        left: "2.5%",
         top: "50%",
-        transform: "translateY(-50%)"
+        transform: "translateY(-50%)",
+        display: {
+            md: "block",
+            xxs: "none"
+        }
     },
     List: {
         li: {

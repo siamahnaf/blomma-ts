@@ -59,7 +59,7 @@ const Nav = ({ active, light }: Props) => {
                 }}
                 sx={styles.Drawer}
             >
-                <Drawers toggleDrawer={toggleDrawer} />
+                <Drawers toggleDrawer={toggleDrawer} active={active} />
             </Drawer>
         </Box>
     );

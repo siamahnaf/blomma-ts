@@ -4,9 +4,21 @@ export default {
             xxxl: "40px",
             xxl: "37px",
             xl: "35px",
-            md: "32px"
+            md: "32px",
+            smd: "28px",
+            lsm: "25px",
+            sm: "20px",
+            xs: "18px",
+            xxs: "16px"
         },
-        height: "102px",
+        height: {
+            md: "102px",
+            smd: "85px",
+            lsm: "80px",
+            sm: "76px",
+            xs: "70px",
+            xxs: "65px"
+        },
         px: "2.5%",
         position: "fixed",
         top: "0",

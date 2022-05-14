@@ -3,11 +3,22 @@ export default {
         bgcolor: "text.primary",
         color: "background.default",
         py: "6em",
-        px: "30%",
+        px: {
+            md: "30%",
+            smd: "20%",
+            lsm: "10%",
+            msm: "8%",
+            xs: "3%",
+            xxs: "2%"
+        },
         position: "fixed",
         bottom: 0,
         zIndex: -2,
-        height: "420px",
+        height: {
+            sm: "420px",
+            xs: "460px",
+            xxs: "470px"
+        },
         textAlign: "center",
     },
     Text: {

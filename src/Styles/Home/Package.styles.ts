@@ -1,21 +1,56 @@
 export default {
     Content: {
-        position: "absolute",
+        position: {
+            smd: "absolute",
+            xxs: "unset"
+        },
         top: "50%",
         width: "100%",
-        transform: "translateY(-50%)"
+        transform: {
+            smd: "translateY(-50%)",
+            xxs: "unset"
+        }
     },
     Container: {
         bgcolor: "background.default",
+        mt: {
+            lg: 0,
+            smd: "50%",
+            xxs: '0'
+        },
+        mx: {
+            lg: 0,
+            md: "15%",
+            smd: "10%",
+            xxs: "0"
+        },
         p: {
             xxxl: "280px 120px",
             xxl: "200px 100px",
             xl: "120px 80px",
-            lg: "85px 70px"
+            md: "85px 70px",
+            smd: "75px 60px",
+            lsm: "65px 50px",
+            msm: "60px 45px",
+            sm: "55px 40px",
+            xs: "50px 35px",
+            xxs: "20px 20px"
+        }
+    },
+    ImageBg: {
+        width: {
+            lg: "62%",
+            md: "92%",
+            smd: "100%",
+            xxs: "100%"
         }
     },
     Heading: {
-        fontSize: "40px",
+        fontSize: {
+            sm: "40px",
+            xs: "30px",
+            xxs: "25px"
+        },
         fontWeight: 600,
         mb: "20px"
     },
@@ -47,7 +82,14 @@ export default {
         position: "absolute",
         zIndex: -1,
         bottom: "-35%",
-        left: "-15%"
+        left: {
+            smd: "-15%",
+            lsm: "-30%",
+            msm: "-50%",
+            sm: "-70%",
+            xs: "-80%",
+            xxs: "-100%"
+        }
     },
     VectorInner: {
         opacity: 0,

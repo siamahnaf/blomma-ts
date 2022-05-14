@@ -1,7 +1,10 @@
 export default {
     CloseIcon: {
         position: "absolute",
-        right: "-18%",
+        right: {
+            smd: "-18%",
+            xxs: "0%"
+        },
         top: "5%",
         button: {
             bgcolor: "text.primary",
@@ -13,6 +16,39 @@ export default {
     Logo: {
         width: "130px",
         mt: "3.5em"
+    },
+    ListNav: {
+        my: "2.5em",
+        mx: "1.1em",
+        display: {
+            lg: "none",
+            xxs: "block"
+        },
+        li: {
+            my: "5px",
+            a: {
+                textDecoration: "none",
+                color: "text.primary",
+                fontSize: "16px",
+                position: "relative",
+                "&:after": {
+                    content: '""',
+                    height: "2px",
+                    position: "absolute",
+                    left: "0px",
+                    bottom: "-1px",
+                    bgcolor: "text.primary",
+                    right: "0px",
+                    opacity: 0,
+                    transition: "0.15s ease"
+                },
+                "&:hover, &.active": {
+                    "&:after": {
+                        opacity: 1
+                    }
+                }
+            }
+        }
     },
     Description: {
         fontSize: "16px",

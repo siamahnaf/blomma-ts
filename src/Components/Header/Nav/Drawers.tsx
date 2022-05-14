@@ -3,6 +3,9 @@ import { Box, Typography, List, ListItem, ButtonBase, Stack } from "@mui/materia
 import Link from "next/link";
 import { Icon } from "@iconify/react";
 
+//Data
+import Navs from "Data/Header/Nav.data";
+
 //Styles
 import styles from "Styles/Header/Drawers.styles";
 
@@ -18,10 +21,11 @@ const Icons = [
 ]
 
 interface Props {
-    toggleDrawer: (current: boolean) => (event: MouseEvent<HTMLButtonElement>) => void
+    toggleDrawer: (current: boolean) => (event: MouseEvent<HTMLButtonElement>) => void;
+    active: string;
 }
 
-const Drawers = ({ toggleDrawer }: Props) => {
+const Drawers = ({ toggleDrawer, active }: Props) => {
     return (
         <Box sx={{ position: "relative" }}>
             <Box sx={styles.CloseIcon}>
@@ -30,6 +34,19 @@ const Drawers = ({ toggleDrawer }: Props) => {
                 </ButtonBase>
             </Box>
             <Box sx={styles.Logo} component="img" src={Logo} alt="Logo" />
+            <List disablePadding dense sx={styles.ListNav}>
+                {Navs && Navs.length > 0 &&
+                    Navs.map((nav, i) => (
+                        <ListItem key={i} dense disableGutters disablePadding sx={{}}>
+                            <Link href={nav.url}>
+                                <a className={active === nav.id ? "active" : ""}>
+                                    {nav.name}
+                                </a>
+                            </Link>
+                        </ListItem>
+                    ))
+                }
+            </List>
             <Typography variant="body1" component="p" sx={styles.Description}>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
             </Typography>

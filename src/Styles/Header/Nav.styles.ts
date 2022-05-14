@@ -55,9 +55,24 @@ export default {
     },
     Drawer: {
         "& .MuiPaper-root": {
-            width: "435px",
+            width: {
+                lg: "435px",
+                smd: "400px",
+                lsm: "350px",
+                msm: "330px",
+                sm: "320px",
+                xs: "300px",
+                xxs: "250px"
+            },
             bgcolor: "primary.main",
-            p: "20px 80px",
+            p: {
+                smd: "20px 80px",
+                lsm: "10px 20px",
+                msm: "8px 15px",
+                sm: "6px 12px",
+                xs: "5px 10px",
+                xxs: "3px 8px"
+            },
             textAlign: "center"
         }
     }

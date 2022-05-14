@@ -42,7 +42,7 @@ const Portfolio = () => {
             <Grid container spacing={0}>
                 {Portfolios && Portfolios.length > 0 &&
                     Portfolios.map((portfolio, i) => (
-                        <Grid item md={4} key={i}>
+                        <Grid item {...{ md: 4, lsm: 6, xxs: 12 }} key={i}>
                             <Box sx={styles.ImageContainer}>
                                 <Link href={portfolio.url}>
                                     <a>

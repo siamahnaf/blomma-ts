@@ -32,8 +32,8 @@ const Brand = () => {
                 <Box sx={styles.Image} component="img" src={Bg} alt="background" />
                 <Box sx={styles.Content}>
                     <Grid container spacing={3}>
-                        <Grid item md={6} />
-                        <Grid item md={6}>
+                        <Grid item {...{ lg: 6, xxs: 12 }} />
+                        <Grid item {...{ lg: 6, xxs: 12 }}>
                             <Box sx={styles.Container}>
                                 <Typography variant="h4" component="h4" sx={styles.Heading}>
                                     Brands tell original stories

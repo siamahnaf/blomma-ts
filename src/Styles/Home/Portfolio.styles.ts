@@ -90,13 +90,24 @@ export default {
             xxxl: "-15%",
             xxl: "-30%",
             xl: "-50%",
-            lg: "-60%"
+            lg: "-60%",
+            md: "-70%",
+            smd: "-100%",
+            lsm: "-110%",
+            sm: "-120%",
+            xs: "-180%",
+            xxs: "-200%"
         },
         top: {
             xxxl: "-8%",
             xxl: "-16%",
             xl: "-25%",
-            lg: "-35%"
+            lg: "-35%",
+            md: "-25%",
+            smd: "-18%",
+            lsm: "-16%",
+            msm: "-5%",
+            xxs: "-6%"
         },
         zIndex: -1,
     },
@@ -106,21 +117,47 @@ export default {
             xxxl: "-23%",
             xxl: "-15%",
             xl: "-25%",
-            lg: "-30%"
+            lg: "-30%",
+            md: "-42%",
+            smd: "-75%",
+            msm: "-75%",
+            sm: "-110%",
+            xs: "-150%",
+            xxs: "-210%"
         },
         top: {
             xxxl: "-12%",
             xxl: "-5%",
             xl: "-7%",
-            lg: "-12%"
+            lg: "-12%",
+            md: "-3%",
+            smd: "-3%",
+            lsm: '-1%',
+            xxs: "0%"
         },
         zIndex: -1,
     },
     VectorThree: {
         position: "absolute",
         zIndex: -1,
-        left: "-32%",
-        bottom: "-18%"
+        left: {
+            lg: "-32%",
+            md: "-50%",
+            smd: "-80%",
+            lsm: "-110%",
+            msm: "-130%",
+            sm: "-160%",
+            xs: "-200%",
+            xxs: "-250%"
+        },
+        bottom: {
+            lg: "-18%",
+            md: "-30%",
+            smd: "-15%",
+            lsm: "-15%",
+            xs: "-5%",
+            xxs: "-3%"
+        }
     },
     VectorInner: {
         opacity: 0,

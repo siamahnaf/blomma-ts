@@ -1,7 +1,12 @@
 export default {
     Embla: {
         overflow: "hidden",
-        mx: "8em"
+        mx: {
+            msm: "8em",
+            sm: "3em",
+            xs: "1em",
+            xxs: "0.5em"
+        }
     },
     EmblaContainer: {
         display: "flex"
@@ -31,11 +36,19 @@ export default {
     LeftButton: {
         position: "absolute",
         top: "55%",
-        left: "2%"
+        left: "2%",
+        display: {
+            msm: "block",
+            xxs: "none"
+        }
     },
     RightButton: {
         position: "absolute",
         top: "55%",
-        right: "2%"
+        right: "2%",
+        display: {
+            msm: "block",
+            xxs: "none"
+        }
     }
 }

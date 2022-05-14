@@ -7,7 +7,10 @@ export default {
     },
     EmblaSlide: {
         position: "relative",
-        flex: "0 0 20%"
+        flex: {
+            msm: "0 0 20%",
+            xxs: "0 0 50%"
+        }
     },
     Images: {
         cursor: "pointer",

@@ -20,7 +20,7 @@ const Package = () => {
         }
     }
     return (
-        <Container maxWidth={false} disableGutters sx={{ py: "3em", position: "relative" }}>
+        <Container maxWidth={false} disableGutters sx={{ py: { smd: "3em", lsm: "1em" }, position: "relative", mt: { lg: 0, smd: "3em", xxs: 0 }, mb: { lg: 0, smd: "5em", xxs: 0 } }}>
             <Box sx={styles.Vector}>
                 <VisibilitySensor partialVisibility onChange={onChangeOne}>
                     <Box sx={styles.VectorInner} className={vectorOne ? "visible" : ""}>
@@ -29,12 +29,12 @@ const Package = () => {
                 </VisibilitySensor>
             </Box>
             <Box sx={{ position: "relative" }}>
-                <Box sx={{ textAlign: "right" }}>
-                    <Box width="62%" component="img" src={Bg} alt="Image" />
+                <Box sx={{ textAlign: { lg: "right", md: "center" } }}>
+                    <Box sx={styles.ImageBg} component="img" src={Bg} alt="Image" />
                 </Box>
                 <Box sx={styles.Content}>
                     <Grid container spacing={3}>
-                        <Grid item md={6}>
+                        <Grid item {...{ lg: 6, xxs: 12 }}>
                             <Box sx={styles.Container}>
                                 <Typography variant="h4" component="h4" sx={styles.Heading}>
                                     Unique packaging matters
@@ -54,7 +54,7 @@ const Package = () => {
                                 </Stack>
                             </Box>
                         </Grid>
-                        <Grid item md={6} />
+                        <Grid item {...{ lg: 6, xxs: 12 }} />
                     </Grid>
                 </Box>
             </Box>

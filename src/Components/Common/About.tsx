@@ -9,10 +9,10 @@ import styles from "Styles/Common/About.styles";
 const About = () => {
     return (
         <Container maxWidth={false} disableGutters sx={{ py: "5em" }}>
-            <Grid container spacing={2}>
+            <Grid container rowSpacing={{ lg: 0, smd: 10, xxs: 10 }} columnSpacing={{ lg: 2, smd: 6, xxs: 0 }}>
                 {Abouts && Abouts.length > 0 &&
                     Abouts.map((about, i) => (
-                        <Grid item md={3} key={i}>
+                        <Grid item {...{ lg: 3, smd: 6, xxs: 12 }} key={i}>
                             <Box sx={styles.Container}>
                                 <Box sx={styles.Images}>
                                     <Box className="icon-src" component="img" src={about.icon} alt="icon" />
