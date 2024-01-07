@@ -1,34 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<img src="https://res.cloudinary.com/dbjrx698c/image/upload/v1704611347/logo_w4vxp0.png" width="100" height="100" style="display: block; margin: 0 auto;">
 
-## Getting Started
+# Blomma TS
+Blomma is a it agency website with multiple page and interactive design. It created with nextjs with typescript. I use material ui for styling this web agency portfolio. This is a interactive ui design and a modern ui!
 
-First, run the development server:
+## Live demo
+[https://melodious-lily-c7f0e2.netlify.app/](https://melodious-lily-c7f0e2.netlify.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Run Locally
+- **Download:** Start by downloading the code.
+- **Install Dependencies:** Run `npm i` to install the necessary dependencies.
+- **Launch:** Launch your development environment with `npm run dev`.
+- **Access:** Simply open your web browser and navigate to `localhost:3000`.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Key features
+- Created with NextJS, Material UI and TypeScript
+- Specially designed for any digital agency or web agency
+- Smooth transition animations
+- Beautiful interactive design
+- All necessary sections
+- Beautiful UI
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Tech Toolset
+- React.js
+- Next.js
+- Material UI
+  
+<img src="https://lh3.googleusercontent.com/d/1GTNFYoW8YfRF8AM5Is6rKsIB4No1ImJ_" width="34px" height="30px" /> <img src="https://lh3.googleusercontent.com/d/1zquFI2JBL5KaJVxhyWFh1NhBy6_8bTkl" width="135px" height="30px" /> <img src="https://lh3.googleusercontent.com/d/1hnSjW2F7h6IPJglpml9rPNaw7chwLWYZ" width="30px" height="30px" />
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Screenshot
+<img src="https://res.cloudinary.com/dbjrx698c/image/upload/v1704619802/scrnli_1_7_2024_3-29-51_PM_sk694u.png" width="100%" height="100%" style="display: block; margin: 0 auto;">
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Support
+Need assistance? Drop me a line at mail@siamahnaf.com or hop on over to my lively <a href="https://wa.me/message/UAXIYNES562EN1"><img src="https://lh3.googleusercontent.com/d/13j7AgG4Pp_eWgaRoV6XH49vDU7-5TbEm" width="15" height="15"></a> messenger.
 
-## Learn More
+## Author(s)
+- [www.siamahnaf.com](https://www.siamahnaf.com/)
 
-To learn more about Next.js, take a look at the following resources:
+## Who I am?
+I am your go-to entity for web application development. Whether it's creating beautiful frontend, robust backend, or ensuring smooth deployment, I've got you covered.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Frontend Development**
+Crafting stunning and responsive user interfaces is my passion. I ensure your web app not only looks great but also delivers an exceptional user experience.
+- **Backend Development**
+I build secure, scalable, and high-performance server-side solutions, tailored to your needs, ensuring your web app runs smoothly.
+- **Deployment Services**
+I handle server setup, configuration, and maintenance, ensuring your web app is deployed securely and efficiently.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Connect with me
+<div style="display: flex; align-items: center; gap: 3px;">
+<a href="https://wa.me/message/UAXIYNES562EN1"><img src="https://lh3.googleusercontent.com/d/13j7AgG4Pp_eWgaRoV6XH49vDU7-5TbEm" width="40" height="40"></a>
+<a href="https://www.linkedin.com/in/siamahnaf/" style="margin-right: 8px"><img src="https://lh3.googleusercontent.com/d/1hqME_Okrps0P1tKi18Rl66W7oa334daw" width="40" height="40"></a>
+<a href="https://twitter.com/siamahnaf198" style="margin-right: 8px"><img src="https://lh3.googleusercontent.com/d/1gCRI58aHh_TXF7uGOMu9F-E2eN4x6AyS" width="40" height="40"></a>
+<a href="https://www.facebook.com/siamahnaff/" style="margin-right: 8px"><img src="https://lh3.googleusercontent.com/d/1gttW7FCHrt2fNCaVQXEYC_wUCYbOYpTJ" width="40" height="40"></a>
+<a href="https://t.me/siamahnaf198" style="margin-right: 8px"><img src="https://lh3.googleusercontent.com/d/1v8rpDVzSc4GmXS8axq5y3fR1i-OnRRaY" width="40" height="40"></a>
+<a href="https://www.npmjs.com/~siamahnaf" style="margin-right: 8px"><img src="https://lh3.googleusercontent.com/d/1t6V2ZlSUyDhwgSaJ5CCj_wDxkQIYQKjR" width="40" height="40"></a>
+</div>
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+------------
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<p align="center" color="red"><a href="https://www.siamahnaf.com/">www.siamahnaf.com</a></p>
