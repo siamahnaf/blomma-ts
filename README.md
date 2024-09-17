@@ -32,7 +32,7 @@ Blomma is a it agency website with multiple page and interactive design. It crea
 
 ## Webinuxs
 <img src="https://res.cloudinary.com/dub0dpenl/image/upload/v1726562110/Personal/xbetf83o2drangioe1ia.png" width="100" height="100">
-Explore Webinuxs, where we bring your web and mobile app applications to life at competitive prices. Our dedicated team is committed to delivering exceptional quality and innovative web and mobile application as your needs.
+Explore Webinuxs, where we bring your web and mobile app applications to life at competitive prices. Our dedicated team is committed to delivering exceptional quality and innovative web and mobile application as your needs. visit https://webinuxs.com/
 
 ## Support
 Need assistance? Drop me a line at mail@siamahnaf.com or hop on over to my lively <a href="https://wa.me/message/UAXIYNES562EN1"><img src="https://lh3.googleusercontent.com/d/13j7AgG4Pp_eWgaRoV6XH49vDU7-5TbEm" width="15" height="15"></a> messenger.
